@@ -1,3 +1,5 @@
 .env
 content/logs/
 content/settings/routes-*
+docker-compose.yml
+data
