@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+   ghost:
+     external_links:
+       - shared_mysql
+     networks:
+       - shared_backend
+     image: ghost:3.38.3
+     ports:
+       - "8888:2368"
+     restart: always
+     env_file: .env
+     volumes:
+       - ./content:/var/lib/ghost/content/
+
+networks:
+    shared_backend:
+        name: shared_backend
+        external: true

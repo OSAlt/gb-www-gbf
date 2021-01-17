@@ -1,0 +1,18 @@
+routes:
+  /:
+    data:
+      post:
+        resource: pages
+        type: read
+        slug: home
+    template:
+      - page
+
+collections:
+  /news/:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
