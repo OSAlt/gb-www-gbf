@@ -4,7 +4,7 @@ services:
   ghost:
     networks:
       - shared_backend
-    image: ghost:3.38.3
+    image: geekbeacon/gb-ghost:3.41.5
     ports:
       - "8888:2368"
     restart: always
