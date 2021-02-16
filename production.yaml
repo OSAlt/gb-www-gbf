@@ -7,7 +7,6 @@ services:
      networks:
        - shared_backend
      image: geekbeacon/gb-ghost:3.41.5
-     user: "${UID}:${GID}"
      ports:
        - "8888:2368"
      restart: always
