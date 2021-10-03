@@ -2,11 +2,12 @@ version: '3.7'
 
 services:
    ghost:
+     user: "${UID}:${GID}"
      external_links:
        - shared_mysql
      networks:
        - shared_backend
-     image: geekbeacon/gb-ghost:4.4.0
+     image: geekbeacon/gb-ghost:4.16.0
      ports:
        - "8888:2368"
      restart: always
