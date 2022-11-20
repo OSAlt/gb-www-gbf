@@ -50,7 +50,7 @@
         }
     ],
     "devDependencies": {
-        "beeper": "^1.1.1",
+        "beeper": "^3.0.0",
         "gscan": "3.5.4",
         "gulp": "4.0.2",
         "gulp-livereload": "4.0.2",
